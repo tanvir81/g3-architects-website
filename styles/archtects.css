@@ -12,6 +12,9 @@
   display: flex;
 }
 
+.text-primery {
+  color: #ff900e;
+}
 .text-gray {
   color: #424242;
 }
@@ -28,6 +31,13 @@
   color: white;
   padding: 20px 25px;
   font-size: 1.25rem;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 130px;
 }
 /* Header Style */
 
@@ -68,11 +78,52 @@
 .banner-image {
   width: 100%;
 }
-
+/* Teams Section */
+.teams {
+  align-items: center;
+}
+.team-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+.feature-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#quick-list {
+  font-weight: 500;
+}
+.feature-description {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 24px 0 32px;
+}
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-link {
+  .nav-link,
+  .teams {
     flex-direction: column;
+  }
+  .team-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features {
+    margin-left: 30px;
+  }
+}
+
+/* media For Tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+  .our-features {
+    margin-left: 50px auto;
   }
 }
