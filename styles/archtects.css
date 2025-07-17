@@ -43,6 +43,21 @@ main {
 main > section {
   margin-top: 130px;
 }
+.our-sponcers {
+  margin-bottom: 130px;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  background-color: #fff4e7;
+  height: 100px;
+  margin: 0 auto;
+}
+p.footer-description {
+  font-size: 1rem;
+}
 /* Header Style */
 
 /* Navbar Related style */
@@ -212,6 +227,9 @@ main > section {
   }
   .feature-archtech img {
     width: 100%;
+  }
+  p.footer-description {
+    font-size: 0.75rem;
   }
 }
 
