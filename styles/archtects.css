@@ -210,6 +210,9 @@ main > section {
     margin-top: 20px;
     margin-left: 20px;
   }
+  .feature-archtech img {
+    width: 100%;
+  }
 }
 
 /* media For Tablet */
@@ -219,7 +222,7 @@ main > section {
     flex-direction: column;
   }
   .our-features {
-    margin-left: 50px auto;
+    margin: 50px auto;
   }
   .sponcor-companies,
   .facts-container {
